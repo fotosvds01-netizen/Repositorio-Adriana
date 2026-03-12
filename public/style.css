@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; 
+    color: #333;
+    overflow-x: hidden;
+}
+
+  body {
+        background-image: url('imagens/padrao-sem-emenda-com-ilustracao-vetorial-de-livros-decorativos-de-contorno_114122-2573 (1).avif.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+h2{
+    text-align: center;
+}
+    
+h4 {
+    text-align: center; 
+    padding: 50px;
+}   
+
+img {
+    border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   float: center;
+}
+
+section img {
+    width: 200px; 
+    display: block; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    box-shadow: #333;
+}
+
+.conteudo {
+    max-width: 1200px;
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px;
+}
+
+.cabecalho {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%; 
+    top: 0;
+    z-index: 1000;
+}
+
+.cabecalho .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo {
+    font-size: 1.75rem; 
+    font-weight: bold;
+}
+
+.lista-menu {
+    display: flex;
+    list-style: none; 
+    gap: 30px;
+}
+
+.menu-navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem; 
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #863b2e4d;
+}
+
+.menu-toggle {
+    display: none; 
+    flex-direction: column; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1001;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.menu-toggle.ativo span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.ativo span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+.secao-principal {
+    background: linear-gradient(135deg, #ce50165e 0%, #a3867b5e 100%);
+    color: white;
+    padding: 180px 0 120px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.texto-principal h1 {
+    font-size: clamp(2rem, 3rem + 2vw, 3rem); 
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.texto-principal p {
+    font-size: clamp(1rem, 1.1rem + 0.5vw, 1.25rem);
+    margin-bottom: 30px;
+}
+
+.botao-destaque {
+    background-color: #aaa9a9;
+    color: white;
+    border: none;
+    padding: 0.9375rem 2.5rem; 
+    font-size: 1.125rem; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.botao-destaque:hover {
+    background-color: #000000;
+}
+
+.secao-inicio {
+    padding: 80px 0;
+  
+}
+
+.secao-inicio h2 {
+    text-align: center;
+    font-size: clamp(1.75rem, 2rem + 1vw, 2.25rem);
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.grade-inicio {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    justify-content: center;
+}
+
+.cartao-inicio {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 350px;
+    min-width: 280px;
+}
+
+.icone {
+    font-size: clamp(3rem, 3.5rem + 1vw, 3.75rem); 
+    margin-bottom: 20px;
+}
+
+.cartao-inicio h3 {
+    font-size: clamp(1.25rem, 1.4rem + 0.5vw, 1.5rem); 
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.cartao-inicio p {
+    color: #666;
+    font-size: 1rem; /
+}
+
+.secao-manga {
+    padding: 80px 0;
+    
+}
+
+.secao-manga h2 {
+    text-align: center;
+    font-size: clamp(1.75rem, 2rem + 1vw, 2.25rem); 
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.grade-manga {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    justify-content: center;
+}
+
+.cartao-manga {
+     background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 1 1 400px; 
+    max-width: 500px; 
+    min-width: 280px; 
+    border-left: 5px solid #000000;
+}
+
+.cartao-manga p {
+    font-size: clamp(1rem, 1.05rem + 0.5vw, 1.125rem); 
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* =============================================
+   SEÇÃO MANHWA - LAYOUT RESPONSIVO
+   ============================================= */
+
+.secao-manhwa {
+    padding: 80px 0;
+    
+}
+
+.secao-manhwa h2 {
+    text-align: center;
+    font-size: clamp(1.75rem, 2rem + 1vw, 2.25rem); /* Responsivo */
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.grade-manhwa {
+    /* Flexbox com wrap para responsividade */
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 40px;
+    justify-content: center;
+}
+
+.cartao-manhwa {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    /* flex responsivo: adapta-se ao espaço disponível */
+    flex: 1 1 400px; /* Base de 400px, mas flexível */
+    max-width: 500px; /* Não ultrapassa 500px */
+    min-width: 280px; /* Mínimo para legibilidade */
+    border-left: 5px solid #000000;
+}
+
+.cartao-manhwa p {
+    background: #f8f9fa;/* Tamanho de fonte responsivo */
+    font-size: clamp(1rem, 1.05rem + 0.5vw, 1.125rem); /* Entre 16px e 18px */
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ============================================
+   SEÇÃO MANHUA - LAYOUT RESPONSIVO
+   ============================================ */
+
+.secao-manhua {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.secao-manhua h2 {
+    text-align: center;
+    font-size: clamp(1.75rem, 2rem + 1vw, 2.25rem); /* Responsivo */
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.grade-manhua {
+    /* Flexbox com wrap para responsividade */
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    gap: 40px;
+    justify-content: center;
+}
+
+.cartao-manhua {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 1 1 400px; /* Base de 400px, mas flexível */
+    max-width: 500px; /* Não ultrapassa 500px */
+    min-width: 280px; /* Mínimo para legibilidade */
+    border-left: 5px solid #000000;
+}
+
+.cartao-manhua p {
+    /* Tamanho de fonte responsivo */
+    font-size: clamp(1rem, 1.05rem + 0.5vw, 1.125rem); /* Entre 16px e 18px */
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ============================================
+   SEÇÃO WEBTOON - LAYOUT RESPONSIVO
+   ============================================ */
+
+.secao-webtoon {
+    padding: 80px 0;
+  
+}
+
+.secao-webtoon h2 {
+    text-align: center;
+    font-size: clamp(1.75rem, 2rem + 1vw, 2.25rem); 
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.grade-webtoon {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px;
+    justify-content: center;
+}
+
+.cartao-webtoon {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 1 1 400px; 
+    max-width: 500px; 
+    min-width: 280px; 
+    border-left: 5px solid #000000;
+}
+
+.cartao-webtoon p {
+    font-size: clamp(1rem, 1.05rem + 0.5vw, 1.125rem); 
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+
+/* ============================================
+   SEÇÃO CATEGORIAS - LAYOUT RESPONSIVO
+   ============================================ */
+
+.secao-categorias {
+    padding: 80px 0;
+    background-color: t;
+}
+
+.secao-categorias h2 {
+    text-align: center;
+    font-size: clamp(1.75rem, 2rem + 1vw, 2.25rem); 
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.grade-categorias {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    justify-content: center;
+}
+
+.cartao-categorias {
+    background: #f8f9fa;
+    padding: 40px;
+    border-radius: 10px;
+    flex: 1 1 400px; /* Base de 400px, mas flexível */
+    max-width: 500px; /* Não ultrapassa 500px */
+    min-width: 280px; /* Mínimo para legibilidade */
+    border-left: 5px solid #000000;
+}
+
+.cartao-categorias p {
+    font-size: clamp(1rem, 1.05rem + 0.5vw, 1.125rem); /* Entre 16px e 18px */
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.nome-autor {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+
+/* ============================================
+   SEÇÃO DE CONTATO - FORMULÁRIO RESPONSIVO
+   ============================================ */
+
+.secao-contato {
+    padding: 80px 0;
+    background-color: transparent;
+}
+
+.secao-contato h2 {
+    text-align: center;
+    font-size: clamp(1.75rem, 2rem + 1vw, 2.25rem); /* Responsivo */
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.formulario-contato {
+    /* max-width: limita largura máxima, mas permite ser menor */
+    max-width: 600px;
+    width: 100%; /* Ocupa 100% até o max-width */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; /* Empilha campos verticalmente */
+    gap: 20px; /* Espaçamento uniforme entre campos */
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem; /* 16px base */
+    font-family: Arial, sans-serif;
+    /* width: 100% garante que campos ocupem toda largura do formulário */
+    width: 100%;
+    background-color: transparent;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+    outline: none; /* Remove outline padrão do navegador */
+    border-color: #3498db; /* Destaque visual no foco */
+}
+
+/* ============================================
+   RODAPÉ
+   ============================================ */
+
+.rodape {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.rodape p {
+    font-size: 0.875rem; /* 14px em rem */
+}
+
+/* ============================================
+   MEDIA QUERIES - BREAKPOINTS RESPONSIVOS
+   ============================================ */
+
+/*
+   CONCEITO DE MEDIA QUERIES:
+   Permitem aplicar estilos diferentes baseados no tamanho da tela.
+   Usamos @media para definir breakpoints (pontos de quebra).
+   
+   BREAKPOINTS UTILIZADOS:
+   - Mobile: até 768px
+   - Tablet: 769px - 1024px
+   - HD (1366px): 1025px - 1366px
+   - Full HD (1920px): 1367px+
+*/
+
+/* ============================================
+   MOBILE - Até 768px
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+    /*
+       max-width: 768px significa "aplicar estilos quando a tela tiver
+       no máximo 768px de largura"
+    */
+   
+    /* Container: padding reduzido em mobile para aproveitar espaço */
+    .conteudo {
+        padding: 0 15px; /* Menos padding lateral em telas pequenas */
+    }
+   
+    /* Menu hambúrguer visível em mobile */
+    .menu-toggle {
+        display: flex; /* Mostra o botão hambúrguer */
+    }
+   
+    /* Menu de navegação: oculto por padrão em mobile */
+    .menu-navegacao {
+        /* position: absolute posiciona o menu sobre outros elementos */
+        position: absolute;
+        top: 100%; /* Abaixo do cabeçalho */
+        left: 0;
+        width: 100%; /* Largura total */
+        background-color: #2c3e50;
+        /* max-height: 0 oculta o menu inicialmente */
+        max-height: 0;
+        overflow: hidden; /* Esconde conteúdo que ultrapassa */
+        /* transition: anima a abertura/fechamento do menu */
+        transition: max-height 0.3s ease;
+    }
+   
+    /* Quando menu está ativo (aberto) */
+    .menu-navegacao.ativo {
+        max-height: 500px; /* Altura suficiente para mostrar itens */
+        /* box-shadow: sombra para destacar menu sobre conteúdo */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+   
+    /* Lista do menu: vertical em mobile */
+    .lista-menu {
+        flex-direction: column; /* Empilha itens verticalmente */
+        gap: 0; /* Remove gap horizontal */
+        padding: 20px 0;
+    }
+   
+    .lista-menu li {
+        width: 100%; /* Cada item ocupa largura total */
+    }
+   
+    .lista-menu a {
+        display: block; /* Torna link clicável em toda área */
+        padding: 15px 20px; /* Padding maior para área de toque */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+   
+    /* Logo: tamanho reduzido em mobile */
+    .logotipo {
+        font-size: 1.5rem; /* 24px */
+    }
+   
+    /* Seção principal: padding reduzido em mobile */
+    .secao-principal {
+        padding: 120px 0 80px; /* Menos padding vertical */
+        margin-top: 60px; /* Menos margem superior */
+    }
+   
+    /* Seções: padding reduzido */
+    .secao-inicio,
+    .secao-manga,
+    .secao-manhwa,
+    .secao-manhua,
+    .secao-webtoon,
+    .secao-categorias,
+    .secao-contato {
+        padding: 50px 0; /* Padding vertical menor */
+    }
+   
+    /* Cartões de mangá: largura total em mobile */
+    .cartao-manga{
+        flex: 1 1 100%; /* Ocupa 100% da largura */
+        max-width: 100%; /* Remove limite máximo */
+        min-width: auto; /* Remove limite mínimo */
+    }
+   
+    .cartao-manhwa {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .cartao-manhua{
+        flex: 1 1 100%; 
+        max-width: 100%; 
+        min-width: auto; 
+    }
+   
+    .cartao-webtoon {
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .cartao-categorias{
+        flex: 1 1 100%;
+        max-width: 100%;
+        min-width: auto;
+    }
+   
+    .grade-manga,
+    .grade-manhwa,
+    .grade-manhua,
+    .grade-webtoon,
+    .grade-categorias {
+        gap: 20px; 
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    .conteudo {
+        max-width: 900px; 
+        padding: 0 30px;
+    }
+   
+    .cartao-manga {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+   
+    .cartao-manhwa {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+
+    .cartao-manhua{
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+    .cartao-webtoon {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+    .cartao-categorias {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+    
+    .conteudo {
+        max-width: 1100px; 
+        padding: 0 30px;
+    }
+   
+    .cartao-manga {
+        flex: 1 1 calc(33.333% - 27px); 
+        max-width: calc(33.333% - 27px);
+    }
+    .cartao-manhwa {
+        flex: 1 1 calc(33.333% - 27px); 
+        max-width: calc(33.333% - 27px);
+    }
+    .cartao-manhua {
+        flex: 1 1 calc(33.333% - 27px); 
+        max-width: calc(33.333% - 27px);
+    }
+    .cartao-webtoon {
+        flex: 1 1 calc(33.333% - 27px); 
+        max-width: calc(33.333% - 27px);
+    }
+    .cartao-manga {
+        flex: 1 1 calc(33.333% - 27px); 
+        max-width: calc(33.333% - 27px);
+    }
+}
+
+@media screen and (min-width: 1367px) {
+
+    .conteudo {
+        max-width: 1200px; 
+        padding: 0 40px; 
+    }
+   
+    .secao-principal {
+        padding: 200px 0 140px;
+    }
+
+    .grade-manga,
+    .grade-manhwa,
+    .grade-manhua,
+    .grade-webtoon,
+    .grade-categorias {
+        padding: 100px 0; 
+    }
+   
+    .cartao-manga,
+    .cartao-manhwa,
+    .cartao-manhua,
+    .cartao-webtoon,
+    .cartao-categorias {
+        max-width: 350px; 
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+    .texto-principal h1 {
+        font-size: 1.75rem; 
+    }
+   
+    .texto-principal p {
+        font-size: 0.9375rem; 
+    }
+   
+    .botao-destaque {
+        padding: 12px 30px; 
+        font-size: 1rem;
+        width: 100%; 
+    }
+   
+    .formulario-contato {
+        padding: 0 10px; 
+    }
+}
+
+h1, h2, h3 {
+    word-wrap: break-word; 
+    hyphens: auto; 
+}
