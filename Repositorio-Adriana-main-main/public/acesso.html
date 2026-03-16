@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Refúgio Literário - Acesso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="conteudo">
+        <div class="logotipo">Biblioteca</div>
+        <nav class="menu-navegacao">
+          <ul class="lista-menu">
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="index.html#categorias">Categorias</a></li>
+            <li><a href="index.html#acervo">Acervo</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-page">
+      <div class="auth-card">
+        <div class="auth-col">
+          <h2>Login</h2>
+          <p>Acesse sua conta para gerenciar o acervo.</p>
+          <form id="login-form">
+            <label for="login-email">Usuário ou e-mail</label>
+            <input
+              id="login-email"
+              type="text"
+              placeholder="Digite seu usuário ou e-mail"
+              required
+            />
+
+            <label for="login-senha">Senha</label>
+            <input
+              id="login-senha"
+              type="password"
+              placeholder="Digite sua senha"
+              required
+            />
+
+            <button type="submit" class="botao-destaque botao-full">
+              Entrar
+            </button>
+            <button type="button" class="botao-secundario botao-full">
+              Cancelar
+            </button>
+
+            <a href="#" class="link-menor">Esqueceu sua senha?</a>
+          </form>
+        </div>
+
+        <div class="auth-col">
+          <h2>Cadastro</h2>
+          <p>Crie sua conta para começar a usar a biblioteca.</p>
+          <form id="register-form">
+            <label for="cad-email">E-mail</label>
+            <input
+              id="cad-email"
+              type="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+
+            <label for="cad-senha">Senha</label>
+            <input
+              id="cad-senha"
+              type="password"
+              placeholder="Crie uma senha"
+              required
+            />
+
+            <label for="cad-senha2">Repita a senha</label>
+            <input
+              id="cad-senha2"
+              type="password"
+              placeholder="Repita a senha"
+              required
+            />
+
+            <p class="texto-termos">
+              Ao criar uma conta você concorda com os nossos
+              <a href="#">Termos &amp; Privacidade</a>.
+            </p>
+
+            <button type="submit" class="botao-destaque botao-full">
+              Cadastrar
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="conteudo">
+        <p>&copy; 2026 Refúgio Literário.</p>
+      </div>
+    </footer>
+    <script src="auth.js"></script>
+  </body>
+</html>

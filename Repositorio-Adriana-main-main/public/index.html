@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refúgio Literário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+      <div class="conteudo">
+        <div class="header-left">
+          <div class="logotipo">Biblioteca</div>
+          <div id="user-status" class="user-status"></div>
+        </div>
+        <nav class="menu-navegacao">
+          <ul class="lista-menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#categorias">Categorias</a></li>
+            <li><a href="#acervo">Acervo</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li id="login-menu-item">
+              <a class="botao-entrar" href="acesso.html">Entrar</a>
+            </li>
+            <li id="logout-menu-item">
+              <a href="#" id="logout-btn" class="logout-link">Sair</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="secao-principal" id="inicio">
+        <div class="conteudo">
+          <div class="texto-principal">
+            <h1>Refúgio Literário</h1>
+            <p>
+              Bem-vindo à sua biblioteca digital. Explore novos títulos, relembre
+              clássicos e organize seu próprio acervo de livros.
+            </p>
+            <button class="botao-destaque" onclick="document.getElementById('acervo').scrollIntoView({ behavior: 'smooth' })">
+              Ver acervo de livros
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Destaque com imagem -->
+      <section class="secao-destaque">
+        <div class="conteudo destaque-grid">
+          <div>
+            <h2>Um espaço para leitores</h2>
+            <p>
+              “Uma biblioteca bem estruturada oferece uma vasta gama de opções,
+              misturando clássicos com lançamentos modernos, organizada para facilitar
+              a descoberta de novas leituras.”
+            </p>
+          </div>
+          <img
+            src="imagens/images.jpg"
+            alt="Estante de livros"
+            class="imagem-destaque"
+          />
+        </div>
+      </section>
+
+      <!-- Categorias principais -->
+      <section class="secao-categorias" id="categorias">
+        <div class="conteudo">
+          <h2>Categorias</h2>
+          <div class="grade-categorias">
+            <div class="cartao-categoria">
+              <h3>Romance</h3>
+              <p>
+                Histórias emocionantes que exploram o amor, os relacionamentos e as
+                conexões humanas.
+              </p>
+            </div>
+            <div class="cartao-categoria">
+              <h3>Fantasia</h3>
+              <p>
+                Mundos imaginários, criaturas mágicas e aventuras épicas.
+              </p>
+            </div>
+            <div class="cartao-categoria">
+              <h3>Terror</h3>
+              <p>
+                Narrativas cheias de suspense, mistério e aquele frio na barriga.
+              </p>
+            </div>
+            <div class="cartao-categoria">
+              <h3>Ação</h3>
+              <p>
+                Enredos cheios de adrenalina, heróis destemidos e grandes conflitos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acervo / Tabela de livros -->
+      <section class="secao-acervo" id="acervo">
+        <div class="conteudo">
+          <div class="acervo-topo">
+            <h2>Acervo de Livros</h2>
+            <p>
+              Aqui você encontra os livros cadastrados no sistema de biblioteca.
+            </p>
+          </div>
+
+          <div class="tabela-container">
+            <table class="tabela-livros">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Título</th>
+                  <th>Autor</th>
+                  <th>Ano</th>
+                  <th>Gênero</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody id="tabelaDeLivro"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato simples -->
+      <section class="secao-contato" id="contato">
+        <div class="conteudo">
+          <h2>Entre em contato</h2>
+          <form class="formulario-contato">
+            <input type="text" placeholder="Seu nome" required />
+            <input type="email" placeholder="Seu e-mail" required />
+            <textarea
+              placeholder="Sua mensagem"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit" class="botao-destaque">
+              Enviar mensagem
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="conteudo">
+        <p>&copy; 2026 Refúgio Literário.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
